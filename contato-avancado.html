@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contato da NEURIFY - Formulário de contato, localização, telefone e múltiplos canais de comunicação.">
+    <meta name="keywords" content="contato, formulário, localização, NEURIFY">
+    <link rel="icon" type="image/png" href="assets/ICONEPRETO.png">
+    <title>Contato - NEURIFY | Fale Conosco</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Contact Styles */
+        .contact-hero {
+            background: linear-gradient(135deg, rgba(217, 0, 217, 0.9), rgba(54, 0, 54, 0.9)), url('assets/hero_abstract_tech.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+
+        .contact-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .contact-hero p {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+            opacity: 0.95;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin: 3rem 0;
+        }
+
+        .contact-form-wrapper {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form-wrapper h2 {
+            font-size: 1.8rem;
+            color: #1f2937;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #1f2937;
+            font-size: 0.95rem;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #d900d9;
+            box-shadow: 0 0 0 3px rgba(217, 0, 217, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .form-row .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 0.75rem;
+            background: linear-gradient(135deg, #d900d9, #a700ff);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            opacity: 0.9;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .info-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #d900d9;
+        }
+
+        .info-card h3 {
+            font-size: 1.3rem;
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .info-card p {
+            color: #4b5563;
+            line-height: 1.6;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-card a {
+            color: #d900d9;
+            text-decoration: none;
+            font-weight: 600;
+            transition: opacity 0.3s ease;
+        }
+
+        .info-card a:hover {
+            opacity: 0.8;
+        }
+
+        .info-card i {
+            color: #d900d9;
+            margin-right: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .communication-channels {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .channel-btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            background: #f9f9f9;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: #1f2937;
+        }
+
+        .channel-btn:hover {
+            border-color: #d900d9;
+            background: rgba(217, 0, 217, 0.05);
+        }
+
+        .channel-btn i {
+            font-size: 2rem;
+            color: #d900d9;
+            margin-bottom: 0.5rem;
+        }
+
+        .channel-btn span {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .map-container {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+        }
+
+        .map-container h3 {
+            font-size: 1.3rem;
+            color: #1f2937;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .map-wrapper {
+            width: 100%;
+            height: 400px;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+        }
+
+        .faq-section {
+            margin-top: 4rem;
+            background: #f9f9f9;
+            padding: 2rem;
+            border-radius: 12px;
+        }
+
+        .faq-section h2 {
+            font-size: 1.8rem;
+            color: #1f2937;
+            margin-bottom: 2rem;
+            font-weight: 700;
+        }
+
+        .faq-item {
+            background: white;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-left: 4px solid transparent;
+        }
+
+        .faq-item:hover {
+            border-left-color: #d900d9;
+        }
+
+        .faq-item h3 {
+            font-size: 1.1rem;
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-item p {
+            color: #4b5563;
+            line-height: 1.6;
+            display: none;
+            margin-top: 1rem;
+        }
+
+        .faq-item.active p {
+            display: block;
+        }
+
+        .faq-item i {
+            color: #d900d9;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active i {
+            transform: rotate(180deg);
+        }
+
+        @media (max-width: 768px) {
+            .contact-hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .map-wrapper {
+                height: 300px;
+            }
+
+            .communication-channels {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/ICONEPRETO.png" alt="NEURIFY" class="logo-img dark-mode-logo"></a>
+                </div>
+                
+                <nav class="nav desktop-nav" role="navigation" aria-label="Menu principal">
+                    <a href="index.html">Início</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="index.html#servicos">Serviços</a>
+                    <a href="portfolio.html">Portfólio</a>
+                    <a href="contato-avancado.html" class="active">Contato</a>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="lang-btn" onclick="toggleLanguage()" aria-label="Alternar idioma">
+                        <i class="fas fa-globe"></i>
+                        <span id="lang-text">PT</span>
+                    </button>
+                    <a class="cta-btn" href="https://wa.me/5519995951060" target="_blank" rel="noopener noreferrer">Consultoria Gratuita</a>
+                    <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Abrir menu mobile">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <nav class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Menu mobile">
+                <a href="index.html" onclick="closeMobileMenu()">Início</a>
+                <a href="sobre.html" onclick="closeMobileMenu()">Sobre</a>
+                <a href="index.html#servicos" onclick="closeMobileMenu()">Serviços</a>
+                <a href="portfolio.html" onclick="closeMobileMenu()">Portfólio</a>
+                <a href="contato-avancado.html" onclick="closeMobileMenu()">Contato</a>
+                <a class="cta-btn mobile" href="https://wa.me/5519995951060" target="_blank" rel="noopener noreferrer">Consultoria Gratuita</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Fale Conosco</h1>
+            <p>Estamos aqui para ajudar! Entre em contato através do formulário ou utilize um dos nossos canais de comunicação.</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="service-details">
+        <div class="container">
+            <div class="contact-container">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2>Envie uma Mensagem</h2>
+                    <form onsubmit="handleContactSubmit(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nome Completo *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Telefone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Empresa</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Assunto *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Selecione um assunto</option>
+                                <option value="orcamento">Solicitar Orçamento</option>
+                                <option value="duvida">Tirar Dúvida</option>
+                                <option value="suporte">Suporte Técnico</option>
+                                <option value="parceria">Parceria</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mensagem *</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Enviar Mensagem</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h3><i class="fas fa-phone"></i> Telefone</h3>
+                        <p><a href="tel:+5519995951060">(19) 99595-1060</a></p>
+                        <p style="font-size: 0.9rem; color: #999;">Segunda a Sexta, 9h às 18h</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3><i class="fas fa-envelope"></i> Email</h3>
+                        <p><a href="mailto:contato@neurify.com.br">contato@neurify.com.br</a></p>
+                        <p style="font-size: 0.9rem; color: #999;">Responderemos em até 24 horas</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3><i class="fas fa-map-marker-alt"></i> Localização</h3>
+                        <p>São Paulo, SP<br>Brasil</p>
+                        <p style="font-size: 0.9rem; color: #999;">Atendimento remoto disponível</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3><i class="fas fa-comments"></i> Canais de Comunicação</h3>
+                        <div class="communication-channels">
+                            <a href="https://wa.me/5519995951060" target="_blank" class="channel-btn" title="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp</span>
+                            </a>
+                            <a href="mailto:contato@neurify.com.br" class="channel-btn" title="Email">
+                                <i class="fas fa-envelope"></i>
+                                <span>Email</span>
+                            </a>
+                            <a href="tel:+5519995951060" class="channel-btn" title="Telefone">
+                                <i class="fas fa-phone"></i>
+                                <span>Telefone</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map Section -->
+            <div class="map-container">
+                <h3>Nossa Localização</h3>
+                <div class="map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1976205267396!2d-46.65396!3d-23.5505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa001%3A0xab35da2f5ca62674!2sSão%20Paulo%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1234567890" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h2>Perguntas Frequentes</h2>
+                
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <h3>
+                        Qual é o tempo de resposta para orçamentos?
+                        <i class="fas fa-chevron-down"></i>
+                    </h3>
+                    <p>Respondemos a solicitações de orçamento em até 24 horas úteis. Para projetos mais complexos, podemos agendar uma reunião de alinhamento para entender melhor suas necessidades.</p>
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <h3>
+                        Vocês oferecem suporte após o projeto?
+                        <i class="fas fa-chevron-down"></i>
+                    </h3>
+                    <p>Sim! Oferecemos planos de suporte e manutenção após a entrega do projeto. Podemos discutir as melhores opções para sua situação durante o orçamento.</p>
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <h3>
+                        Como funciona o processo de desenvolvimento?
+                        <i class="fas fa-chevron-down"></i>
+                    </h3>
+                    <p>Utilizamos metodologias ágeis (Scrum) ou tradicionais (Waterfall) conforme a necessidade do projeto. Você terá acompanhamento contínuo e reuniões periódicas para alinhar expectativas.</p>
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <h3>
+                        Qual é o valor mínimo para um projeto?
+                        <i class="fas fa-chevron-down"></i>
+                    </h3>
+                    <p>Não temos um valor mínimo fixo. Trabalhamos com projetos de diferentes tamanhos e orçamentos. Converse conosco sobre suas necessidades e encontraremos a melhor solução.</p>
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <h3>
+                        Vocês trabalham com empresas de qualquer tamanho?
+                        <i class="fas fa-chevron-down"></i>
+                    </h3>
+                    <p>Sim! Trabalhamos com startups, pequenas e médias empresas, e até grandes corporações. Nossa equipe está preparada para adaptar-se às necessidades de cada cliente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/ICONEPRETO.png" alt="NEURIFY">
+                    </div>
+                    <p>Transformando negócios através de soluções digitais integradas.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="servico-web-design.html">Web Design</a></li>
+                        <li><a href="servico-desenvolvimento.html">Desenvolvimento Web</a></li>
+                        <li><a href="servico-rh.html">Gestão de RH</a></li>
+                        <li><a href="servico-financeiro.html">Gestão Financeira</a></li>
+                        <li><a href="servico-administracao.html">Administração</a></li>
+                        <li><a href="servico-programacao.html">Programação Personalizada</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-envelope"></i> contato@neurify.com.br</p>
+                    <p><i class="fas fa-phone"></i> (19) 99595-1060</p>
+                    <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 NEURIFY. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function handleContactSubmit(event) {
+            event.preventDefault();
+            const formData = new FormData(event.target);
+            const data = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                phone: formData.get('phone'),
+                company: formData.get('company'),
+                subject: formData.get('subject'),
+                message: formData.get('message')
+            };
+
+            // Enviar para WhatsApp
+            const message = `Olá! Recebi uma mensagem através do formulário de contato do site.\\n\\nDados:\\nNome: ${data.name}\\nEmail: ${data.email}\\nTelefone: ${data.phone}\\nEmpresa: ${data.company}\\nAssunto: ${data.subject}\\n\\nMensagem:\\n${data.message}`;
+            const encodedMessage = encodeURIComponent(message);
+            window.open(`https://wa.me/5519995951060?text=${encodedMessage}`, '_blank');
+
+            // Limpar formulário
+            event.target.reset();
+            alert('Obrigado! Sua mensagem foi enviada. Entraremos em contato em breve.');
+        }
+
+        function toggleFaq(element) {
+            element.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

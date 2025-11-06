@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="NEURIFY - Soluções digitais integradas para web design, desenvolvimento e gestão empresarial. Transforme seu negócio com tecnologia de ponta.">
+    <meta name="keywords" content="web design, desenvolvimento web, gestão empresarial, transformação digital, programação, consultoria, NEURIFY">
+    <meta name="author" content="NEURIFY">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://neurify.com.br/">
+    <meta property="og:title" content="NEURIFY - Soluções Digitais Integradas">
+    <meta property="og:description" content="Transforme seu negócio digital com soluções integradas de web design, desenvolvimento e gestão empresarial.">
+    <meta property="og:image" content="assets/ICONEPRETO.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://neurify.com.br/">
+    <meta property="twitter:title" content="NEURIFY - Soluções Digitais Integradas">
+    <meta property="twitter:description" content="Transforme seu negócio digital com soluções integradas de web design, desenvolvimento e gestão empresarial.">
+    <meta property="twitter:image" content="assets/ICONEPRETO.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/ICONEPRETO.png">
+    <link rel="apple-touch-icon" href="assets/ICONEPRETO.png">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#e91e63">
+    
+    <title>NEURIFY - Soluções Digitais Integradas | Web Design & Desenvolvimento</title>
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<style>
+
+/* ==== Nosso Processo de Trabalho ==== */
+.process-wrapper {
+    background-color: #e9eef2;
+    padding: 3rem 1rem;
+    font-family: inherit;
+}
+.process-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.process-header-title {
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0 0 .5rem;
+}
+.process-header-desc {
+    color: #4b5563;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0 0 2rem;
+}
+.process-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.process-card {
+    flex: 1 1 240px;
+    min-width: 240px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    border: 1px solid rgba(0,0,0,0.05);
+    padding: 2rem 1.5rem;
+    position: relative;
+}
+.process-step-badge {
+    width: 48px;
+    height: 48px;
+    border-radius: 9999px;
+    background: radial-gradient(circle at 30% 30%, #ff00ff 0%, #a700ff 60%);
+    border: 3px solid #ffffff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.process-card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #111827;
+    margin: 0 0 .5rem;
+}
+.process-card-desc {
+    font-size: .9rem;
+    line-height: 1.4;
+    color: #4b5563;
+    margin: 0;
+}
+@media(max-width:768px){
+    .process-wrapper {
+        padding: 2rem 1rem;
+    }
+    .process-header-title {
+        font-size: 1.5rem;
+    }
+}
+
+</style>
+<
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/ICONEPRETO.png" alt="NEURIFY" class="logo-img dark-mode-logo"></a>
+                </div>
+                
+                <nav class="nav desktop-nav" role="navigation" aria-label="Menu principal">
+                    <a href="index.html" data-pt="Início" data-en="Home">Início</a>
+                    <a href="sobre.html" data-pt="Sobre" data-en="About">Sobre</a>
+                    <a href="#servicos" data-pt="Serviços" data-en="Services">Serviços</a>
+                    <a href="portfolio.html" data-pt="Portfólio" data-en="Portfolio">Portfólio</a>
+                    <a href="contato-avancado.html" data-pt="Contato" data-en="Contact">Contato</a>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="lang-btn" onclick="toggleLanguage()" aria-label="Alternar idioma">
+                        <i class="fas fa-globe"></i>
+                        <span id="lang-text">PT</span>
+                    </button>
+                    <a class="cta-btn" href="https://wa.me/5519995951060" target="_blank" rel="noopener noreferrer">Consultoria Gratuita</a>
+                    <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Abrir menu mobile" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <nav class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Menu mobile">
+                <a href="index.html" data-pt="Início" data-en="Home" onclick="closeMobileMenu()">Início</a>
+                <a href="sobre.html" data-pt="Sobre" data-en="About" onclick="closeMobileMenu()">Sobre</a>
+                <a href="#servicos" data-pt="Serviços" data-en="Services" onclick="closeMobileMenu()">Serviços</a>
+                <a href="portfolio.html" data-pt="Portfólio" data-en="Portfolio" onclick="closeMobileMenu()">Portfólio</a>
+                <a href="contato-avancado.html" data-pt="Contato" data-en="Contact" onclick="closeMobileMenu()">Contato</a>
+                <a class="cta-btn mobile" href="https://wa.me/5519995951060" target="_blank" rel="noopener noreferrer">Consultoria Gratuita</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Carousel -->
+    <!-- Hero Section - Static Banner -->
+    <section id="inicio" class="hero-static" role="main" aria-label="Seção principal">
+        <div class="hero-static-inner">
+            <div class="hero-static-text">
+                <h1>
+                    Impulsione sua empresa<br>
+                    <span class="highlight">com soluções digitais inteligentes</span>
+                </h1>
+                <p>
+                    Sites profissionais, sistemas sob medida e gestão estratégica para levar o seu negócio a outro nível.
+                </p>
+            </div>
+            <div class="hero-static-logo">
+                <img src="assets/PRINCIPALPRETO.png" alt="NEURIFY Logo" class="hero-logo-display hero-logo-large">
+            </div>
+        </div>
+    </section>
+
+
+    
+
+<section class="process-wrapper">
+  <div class="process-inner">
+    <h2 class="process-header-title" data-pt="Nosso Processo de Trabalho" data-en="Our Work Process">Nosso Processo de Trabalho</h2>
+    <p class="process-header-desc">
+      Seguimos uma metodologia ágil e transparente para garantir que seu projeto seja entregue com excelência e dentro do prazo.
+    </p>
+
+    <div class="process-grid">
+
+      <div class="process-card">
+        <div class="process-step-badge">1</div>
+        <h3 class="process-card-title">Descoberta e Planejamento</h3>
+        <p class="process-card-desc">
+          Entendimento profundo das suas necessidades, definição de escopo e planejamento estratégico do projeto.
+        </p>
+      </div>
+
+      <div class="process-card">
+        <div class="process-step-badge">2</div>
+        <h3 class="process-card-title">Design e Prototipagem</h3>
+        <p class="process-card-desc">
+          Criação da arquitetura, design de interface (UI/UX) e protótipos interativos para validação.
+        </p>
+      </div>
+
+      <div class="process-card">
+        <div class="process-step-badge">3</div>
+        <h3 class="process-card-title">Desenvolvimento e Testes</h3>
+        <p class="process-card-desc">
+          Codificação, implementação das funcionalidades e testes rigorosos para garantir a qualidade e performance.
+        </p>
+      </div>
+
+      <div class="process-card">
+        <div class="process-step-badge">4</div>
+        <h3 class="process-card-title">Lançamento e Suporte</h3>
+        <p class="process-card-desc">
+          Implantação final, lançamento ao público e suporte contínuo para manutenção e novas funcionalidades.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+    <section id="servicos" class="services" aria-label="Serviços oferecidos">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-pt="Nossos Serviços" data-en="Our Services">Nossos Serviços</h2>
+                <p data-pt="Soluções completas para transformar sua presença digital e otimizar sua gestão empresarial." data-en="Complete solutions to transform your digital presence and optimize your business management.">
+                    Soluções completas para transformar sua presença digital e otimizar sua gestão empresarial.
+                </p>
+            </div>
+
+            <div class="services-tabs-container">
+                <div class="services-tabs-list" role="tablist" aria-label="Nossos Serviços">
+                    <button class="service-tab active" role="tab" aria-selected="true" aria-controls="tab-web-design" id="tab-btn-web-design" data-service="web-design">
+                        <i class="fas fa-palette"></i>
+                        <span data-pt="Web Design Criativo" data-en="Creative Web Design">Web Design Criativo</span>
+                    </button>
+                    <button class="service-tab" role="tab" aria-selected="false" aria-controls="tab-desenvolvimento" id="tab-btn-desenvolvimento" data-service="desenvolvimento">
+                        <i class="fas fa-code"></i>
+                        <span data-pt="Desenvolvimento Web" data-en="Web Development">Desenvolvimento Web</span>
+                    </button>
+                    <button class="service-tab" role="tab" aria-selected="false" aria-controls="tab-rh" id="tab-btn-rh" data-service="rh">
+                        <i class="fas fa-users"></i>
+                        <span data-pt="Gestão de RH" data-en="HR Management">Gestão de RH</span>
+                    </button>
+                    <button class="service-tab" role="tab" aria-selected="false" aria-controls="tab-financeiro" id="tab-btn-financeiro" data-service="financeiro">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span data-pt="Gestão Financeira" data-en="Financial Management">Gestão Financeira</span>
+                    </button>
+                    <button class="service-tab" role="tab" aria-selected="false" aria-controls="tab-administracao" id="tab-btn-administracao" data-service="administracao">
+                        <i class="fas fa-cogs"></i>
+                        <span data-pt="Administração Empresarial" data-en="Business Administration">Administração Empresarial</span>
+                    </button>
+                    <button class="service-tab" role="tab" aria-selected="false" aria-controls="tab-programacao" id="tab-btn-programacao" data-service="programacao">
+                        <i class="fas fa-lightning-bolt"></i>
+                        <span data-pt="Programação Personalizada" data-en="Custom Programming">Programação Personalizada</span>
+                    </button>
+                </div>
+
+                <div class="services-tabs-content">
+                    <!-- Web Design Criativo -->
+                    <div id="tab-web-design" class="tab-pane active" role="tabpanel" aria-labelledby="tab-btn-web-design">
+                        <div class="tab-icon"><i class="fas fa-palette"></i></div>
+                        <h3 data-pt="Web Design Criativo" data-en="Creative Web Design">Web Design Criativo</h3>
+                        <p data-pt="Designs modernos e responsivos que captivam seu público. Transformamos sua visão em uma experiência digital única e atraente." data-en="Modern and responsive designs that captivate your audience. We transform your vision into a unique and attractive digital experience.">
+                            Designs modernos e responsivos que captivam seu público. Transformamos sua visão em uma experiência digital única e atraente.
+                        </p>
+                        <a href="servico-web-design.html" class="btn-primary service-link-tab" data-pt="Ver Detalhes" data-en="View Details">
+                            <i class="fas fa-arrow-right"></i>
+                            Ver Detalhes
+                        </a>
+                    </div>
+
+                    <!-- Desenvolvimento Web -->
+                    <div id="tab-desenvolvimento" class="tab-pane" role="tabpanel" aria-labelledby="tab-btn-desenvolvimento">
+                        <div class="tab-icon"><i class="fas fa-code"></i></div>
+                        <h3 data-pt="Desenvolvimento Web" data-en="Web Development">Desenvolvimento Web</h3>
+                        <p data-pt="Aplicações robustas com tecnologias de ponta. Criamos sistemas e plataformas escaláveis, seguras e de alta performance." data-en="Robust applications with cutting-edge technologies. We create scalable, secure, and high-performance systems and platforms.">
+                            Aplicações robustas com tecnologias de ponta. Criamos sistemas e plataformas escaláveis, seguras e de alta performance.
+                        </p>
+                        <a href="servico-desenvolvimento.html" class="btn-primary service-link-tab" data-pt="Ver Detalhes" data-en="View Details">
+                            <i class="fas fa-arrow-right"></i>
+                            Ver Detalhes
+                        </a>
+                    </div>
+
+                    <!-- Gestão de RH -->
+                    <div id="tab-rh" class="tab-pane" role="tabpanel" aria-labelledby="tab-btn-rh">
+                        <div class="tab-icon"><i class="fas fa-users"></i></div>
+                        <h3 data-pt="Gestão de RH" data-en="HR Management">Gestão de RH</h3>
+                        <p data-pt="Soluções completas para gestão de talentos. Otimize processos de recrutamento, seleção e desenvolvimento de equipes." data-en="Complete solutions for talent management. Optimize recruitment, selection, and team development processes.">
+                            Soluções completas para gestão de talentos. Otimize processos de recrutamento, seleção e desenvolvimento de equipes.
+                        </p>
+                        <a href="servico-rh.html" class="btn-primary service-link-tab" data-pt="Ver Detalhes" data-en="View Details">
+                            <i class="fas fa-arrow-right"></i>
+                            Ver Detalhes
+                        </a>
+                    </div>
+
+                    <!-- Gestão Financeira -->
+                    <div id="tab-financeiro" class="tab-pane" role="tabpanel" aria-labelledby="tab-btn-financeiro">
+                        <div class="tab-icon"><i class="fas fa-dollar-sign"></i></div>
+                        <h3 data-pt="Gestão Financeira" data-en="Financial Management">Gestão Financeira</h3>
+                        <p data-pt="Controle financeiro estratégico para maximizar resultados. Ferramentas e consultoria para uma saúde financeira sólida e crescimento sustentável." data-en="Strategic financial control to maximize results. Tools and consulting for solid financial health and sustainable growth.">
+                            Controle financeiro estratégico para maximizar resultados. Ferramentas e consultoria para uma saúde financeira sólida e crescimento sustentável.
+                        </p>
+                        <a href="servico-financeiro.html" class="btn-primary service-link-tab" data-pt="Ver Detalhes" data-en="View Details">
+                            <i class="fas fa-arrow-right"></i>
+                            Ver Detalhes
+                        </a>
+                    </div>
+
+                    <!-- Administração Empresarial -->
+                    <div id="tab-administracao" class="tab-pane" role="tabpanel" aria-labelledby="tab-btn-administracao">
+                        <div class="tab-icon"><i class="fas fa-cogs"></i></div>
+                        <h3 data-pt="Administração Empresarial" data-en="Business Administration">Administração Empresarial</h3>
+                        <p data-pt="Otimização de processos para maior eficiência. Soluções de software e metodologias para gestão empresarial moderna." data-en="Process optimization for greater efficiency. Software solutions and methodologies for modern business management.">
+                            Otimização de processos para maior eficiência. Soluções de software e metodologias para gestão empresarial moderna.
+                        </p>
+                        <a href="servico-administracao.html" class="btn-primary service-link-tab" data-pt="Ver Detalhes" data-en="View Details">
+                            <i class="fas fa-arrow-right"></i>
+                            Ver Detalhes
+                        </a>
+                    </div>
+
+                    <!-- Programação Personalizada -->
+                    <div id="tab-programacao" class="tab-pane" role="tabpanel" aria-labelledby="tab-btn-programacao">
+                        <div class="tab-icon"><i class="fas fa-lightning-bolt"></i></div>
+                        <h3 data-pt="Programação Personalizada" data-en="Custom Programming">Programação Personalizada</h3>
+                        <p data-pt="Soluções sob medida para necessidades específicas. Desenvolvemos softwares, aplicativos e integrações complexas com foco em inovação." data-en="Tailor-made solutions for specific needs. We develop software, applications, and complex integrations with a focus on innovation.">
+                            Soluções sob medida para necessidades específicas. Desenvolvemos softwares, aplicativos e integrações complexas com foco em inovação.
+               
+
+
+
+
+
+
+
+         </p>
+                        <a href="servico-programacao.html" class="btn-primary service-link-tab" data-pt="Ver Detalhes" data-en="View Details">
+                            <i class="fas fa-arrow-right"></i>
+                            Ver Detalhes
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Integration Section -->
+    <section id="social-integration" class="social-integration-section">
+        <div class="container">
+            <div class="section-header" style="text-align: center; margin-bottom: 3rem;">
+                <h2 style="font-size: 2rem; color: #1f2937; margin-bottom: 1rem; font-weight: 700;" data-pt="Conecte-se Conosco" data-en="Connect With Us">Conecte-se Conosco</h2>
+                <p style="color: #4b5563; font-size: 1.1rem; max-width: 600px; margin: 0 auto;">Siga a NEURIFY nas redes sociais e fique por dentro das novidades e tendências do mercado digital.</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/neurify.ag?igsh=bTMwNWs2ZzhqbG94&utm_source=qr" class="social-icon-link instagram" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/5519995951060" class="social-icon-link whatsapp" aria-label="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- High-Impact CTA Section -->
+    <section id="cta-alto-impacto" class="high-impact-cta">
+        <div class="container">
+            <h2 data-pt="Pronto para Transformar Seu Negócio?" data-en="Ready to Transform Your Business?">Pronto para Transformar Seu Negócio?</h2>
+            <p>Não perca mais tempo com soluções que não funcionam. Fale com nossos especialistas e descubra como a NEURIFY pode levar sua empresa ao próximo nível.</p>
+            <a href="contato-avancado.html" class="cta-btn">Solicitar Consultoria Gratuita</a>
+        </div>
+    </section>
+
+    <!-- Success Statistics Section -->
+    
+
+
+    <!-- Portfolio Highlights Section -->
+    <section id="portfolio-destaque" class="service-details" style="background-color: #f9f9f9;">
+        <div class="container">
+            <div class="section-header" style="text-align: center; margin-bottom: 3rem;">
+                <h2 style="font-size: 2rem; color: #1f2937; margin-bottom: 1rem; font-weight: 700;" data-pt="Destaques do Portfólio" data-en="Portfolio Highlights">Destaques do Portfólio</h2>
+                <p style="color: #4b5563; font-size: 1.1rem; max-width: 600px; margin: 0 auto;">Conheça alguns dos projetos que transformaram negócios e geraram resultados reais para nossos clientes.</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <div style="background: linear-gradient(135deg, #d900d9, #360036); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;"><i class="fas fa-shopping-bag"></i></div>
+                    <div style="padding: 1.5rem;">
+                        <h3 style="font-size: 1.2rem; color: #1f2937; margin-bottom: 0.5rem; font-weight: 700;">E-commerce de Moda</h3>
+                        <p style="color: #4b5563; margin-bottom: 1rem; line-height: 1.5;">Plataforma de vendas online com integração de pagamento e gestão de estoque. Resultado: <strong>250% aumento de vendas</strong>.</p>
+                        <a href="portfolio.html" style="color: #d900d9; text-decoration: none; font-weight: 600;">Ver Caso de Sucesso <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <div style="background: linear-gradient(135deg, #d900d9, #360036); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;"><i class="fas fa-users"></i></div>
+                    <div style="padding: 1.5rem;">
+                        <h3 style="font-size: 1.2rem; color: #1f2937; margin-bottom: 0.5rem; font-weight: 700;">Sistema de Gestão RH</h3>
+                        <p style="color: #4b5563; margin-bottom: 1rem; line-height: 1.5;">Plataforma completa de gestão de recursos humanos. Resultado: <strong>80% redução de tempo administrativo</strong>.</p>
+                        <a href="portfolio.html" style="color: #d900d9; text-decoration: none; font-weight: 600;">Ver Caso de Sucesso <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <div style="background: linear-gradient(135deg, #d900d9, #360036); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;"><i class="fas fa-building"></i></div>
+                    <div style="padding: 1.5rem;">
+                        <h3 style="font-size: 1.2rem; color: #1f2937; margin-bottom: 0.5rem; font-weight: 700;">Site Corporativo Moderno</h3>
+                        <p style="color: #4b5563; margin-bottom: 1rem; line-height: 1.5;">Redesign completo com foco em conversão. Resultado: <strong>150% aumento de tráfego</strong>.</p>
+                        <a href="portfolio.html" style="color: #d900d9; text-decoration: none; font-weight: 600;">Ver Caso de Sucesso <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="portfolio.html" style="display: inline-block; padding: 0.75rem 2rem; background: linear-gradient(135deg, #d900d9, #a700ff); color: white; border-radius: 6px; text-decoration: none; font-weight: 600; transition: opacity 0.3s ease;" onmouseover="this.style.opacity='0.9'" onmouseout="this.style.opacity='1'">Ver Todos os Projetos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="depoimentos" class="service-details">
+        <div class="container">
+            <div class="section-header" style="text-align: center; margin-bottom: 3rem;">
+                <h2 style="font-size: 2rem; color: #1f2937; margin-bottom: 1rem; font-weight: 700;" data-pt="O que Nossos Clientes Dizem" data-en="What Our Clients Say">O que Nossos Clientes Dizem</h2>
+                <p style="color: #4b5563; font-size: 1.1rem; max-width: 600px; margin: 0 auto;">Confira os depoimentos de empresas que transformaram seus negócios com nossas soluções.</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-left: 4px solid #d900d9;">
+                    <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                        <i class="fas fa-star" style="color: #ffc107; margin-right: 0.25rem;"></i>
+                        <i class="fas fa-star" style="color: #ffc107; margin-right: 0.25rem;"></i>
+                        <i class="fas fa-star" style="color: #ffc107; margin-right: 0.25rem;"></i>
+                        <i class="fas fa-star" style="color: #ffc107; margin-right: 0.25rem;"></i>
+                        <i class="fas fa-star" style="color: #ffc107;"></i>
+                    </div>
+                    <p style="color: #4b5563; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem; font-style: italic;">"A NEURIFY transformou completamente nossa presença digital. O resultado foi imediato e os retornos superaram nossas expectativas."</p>
+                    <div style="display: flex; align-items: center;">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #d900d9, #a700ff); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; margin-right: 1rem;">JC</div>
+                        <div>
+                            <p style="color: #1f2937; font-weight: 600; margin: 0;">João Carlos</p>
+                            <p style="color: #999; font-size: 0.9rem; margin: 0;">CEO, Empresa de Moda</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-left: 4px solid #d900d9;">
+                    <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                        <i class="fas fa-star" style="color: #ffc107; margin-right: 0.25rem;"></i>
+                        <i class="fas fa-star" style="color: #ffc107; margin-right: 0.25rem;"></i>
+                        <i class="fas fa-star" style="color: #ffc107; margin-right: 0.25rem;"></i>
+                        <i class="fas fa-star" style="color: #ffc107; margin-right: 0.25rem;"></i>
+                        <i class="fas fa-star" style="color: #ffc107;"></i>
+                    </div>
+                    <p style="color: #4b5563; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem; font-style: italic;">"Profissionalismo, dedicação e resultados. A NEURIFY entregou exatamente o que promete. Recomendo!"</p>
+                    <div style="display: flex; align-items: center;">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #d900d9, #a700ff); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; margin-right: 1rem;">MC</div>
+                        <div>
+                            <p style="color: #1f2937; font-weight: 600; margin: 0;">Marina Costa</p>
+                            <p style="color: #999; font-size: 0.9rem; margin: 0;">Diretora, Consultoria Empresarial</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-left: 4px solid #d900d9;">
+                    <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                        <i class="fas fa-star" style="color: #ffc107; margin-right: 0.25rem;"></i>
+                        <i class="fas fa-star" style="color: #ffc107; margin-right: 0.25rem;"></i>
+                        <i class="fas fa-star" style="color: #ffc107; margin-right: 0.25rem;"></i>
+                        <i class="fas fa-star" style="color: #ffc107; margin-right: 0.25rem;"></i>
+                        <i class="fas fa-star" style="color: #ffc107;"></i>
+                    </div>
+                    <p style="color: #4b5563; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem; font-style: italic;">"Equipe altamente qualificada, comunicação clara e entrega dentro do prazo. Parceria perfeita para nosso crescimento."</p>
+                    <div style="display: flex; align-items: center;">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #d900d9, #a700ff); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; margin-right: 1rem;">RP</div>
+                        <div>
+                            <p style="color: #1f2937; font-weight: 600; margin: 0;">Roberto Pereira</p>
+                            <p style="color: #999; font-size: 0.9rem; margin: 0;">Fundador, Startup de Tecnologia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients/Partners Section -->
+    
+
+
+    <!-- Blog/News Section -->
+    
+
+
+    <!-- FAQ Section -->
+    <section id="faq" class="service-details" style="background-color: #f9f9f9;">
+        <div class="container">
+            <div class="section-header" style="text-align: center; margin-bottom: 3rem;">
+                <h2 style="font-size: 2rem; color: #1f2937; margin-bottom: 1rem; font-weight: 700;" data-pt="Perguntas Frequentes" data-en="Frequently Asked Questions">Perguntas Frequentes</h2>
+                <p style="color: #4b5563; font-size: 1.1rem; max-width: 600px; margin: 0 auto;">Respostas para as dúvidas mais comuns sobre nossos serviços e processos.</p>
+            </div>
+            <div style="max-width: 700px; margin: 0 auto;">
+                <div style="background: white; padding: 1.5rem; margin-bottom: 1rem; border-radius: 8px; cursor: pointer; border-left: 4px solid #d900d9;" onclick="toggleFaq(this)">
+                    <h3 style="font-size: 1.1rem; color: #1f2937; margin: 0; display: flex; justify-content: space-between; align-items: center; font-weight: 600;">
+                        Qual é o tempo de desenvolvimento de um projeto?
+                        <i class="fas fa-chevron-down" style="color: #d900d9;"></i>
+                    </h3>
+                    <p style="color: #4b5563; margin-top: 1rem; display: none; line-height: 1.6;">O tempo varia conforme a complexidade do projeto. Projetos simples podem levar 2-4 semanas, enquanto projetos mais complexos podem levar 2-6 meses. Durante a primeira reunião, faremos uma estimação precisa baseada em seus requisitos.</p>
+                </div>
+                <div style="background: white; padding: 1.5rem; margin-bottom: 1rem; border-radius: 8px; cursor: pointer; border-left: 4px solid #d900d9;" onclick="toggleFaq(this)">
+                    <h3 style="font-size: 1.1rem; color: #1f2937; margin: 0; display: flex; justify-content: space-between; align-items: center; font-weight: 600;">
+                        Vocês oferecem suporte pós-projeto?
+                        <i class="fas fa-chevron-down" style="color: #d900d9;"></i>
+                    </h3>
+                    <p style="color: #4b5563; margin-top: 1rem; display: none; line-height: 1.6;">Sim! Oferecemos planos de suporte e manutenção após a entrega do projeto. Podemos discutir as melhores opções para sua situação durante o orçamento.</p>
+                </div>
+                <div style="background: white; padding: 1.5rem; margin-bottom: 1rem; border-radius: 8px; cursor: pointer; border-left: 4px solid #d900d9;" onclick="toggleFaq(this)">
+                    <h3 style="font-size: 1.1rem; color: #1f2937; margin: 0; display: flex; justify-content: space-between; align-items: center; font-weight: 600;">
+                        Como funciona o processo de desenvolvimento?
+                        <i class="fas fa-chevron-down" style="color: #d900d9;"></i>
+                    </h3>
+                    <p style="color: #4b5563; margin-top: 1rem; display: none; line-height: 1.6;">Utilizamos metodologias ágeis (Scrum) ou tradicionais (Waterfall) conforme a necessidade do projeto. Você terá acompanhamento contínuo e reuniões periódicas para alinhar expectativas.</p>
+                </div>
+                <div style="background: white; padding: 1.5rem; margin-bottom: 1rem; border-radius: 8px; cursor: pointer; border-left: 4px solid #d900d9;" onclick="toggleFaq(this)">
+                    <h3 style="font-size: 1.1rem; color: #1f2937; margin: 0; display: flex; justify-content: space-between; align-items: center; font-weight: 600;">
+                        Qual é o valor mínimo para um projeto?
+                        <i class="fas fa-chevron-down" style="color: #d900d9;"></i>
+                    </h3>
+                    <p style="color: #4b5563; margin-top: 1rem; display: none; line-height: 1.6;">Não temos um valor mínimo fixo. Trabalhamos com projetos de diferentes tamanhos e orçamentos. Converse conosco sobre suas necessidades e encontraremos a melhor solução.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="contact-section" style="display: none;">
+    <div class="container">
+        <div class="contact-whatsapp-card">
+            <h2 data-pt="Fale agora com nossa equipe" data-en="Talk to Our Team Now">Fale agora com nossa equipe</h2>
+            <p>Atendimento rápido e direto pelo WhatsApp. Sem burocracia, sem fila. Clique no botão abaixo e conte pra gente o que você precisa.</p>
+            <a href="https://wa.me/5519995951060" class="whatsapp-cta" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-cta-icon">
+                <span data-pt="Conversar no WhatsApp" data-en="Chat on WhatsApp">Conversar no WhatsApp</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+    
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/ICONEPRETO.png" alt="NEURIFY">
+                    </div>
+                    <p data-pt="Transformando negócios através de soluções digitais integradas." data-en="Transforming businesses through integrated digital solutions.">
+                        Transformando negócios através de soluções digitais integradas.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h4 data-pt="Serviços" data-en="Services">Serviços</h4>
+                    <ul>
+                        <li><a href="servico-web-design.html" data-pt="Web Design" data-en="Web Design">Web Design</a></li>
+                        <li><a href="servico-desenvolvimento.html" data-pt="Desenvolvimento Web" data-en="Web Development">Desenvolvimento Web</a></li>
+                        <li><a href="servico-rh.html" data-pt="Gestão de RH" data-en="HR Management">Gestão de RH</a></li>
+                        <li><a href="servico-financeiro.html" data-pt="Gestão Financeira" data-en="Financial Management">Gestão Financeira</a></li>
+                        <li><a href="servico-administracao.html" data-pt="Administração" data-en="Administration">Administração</a></li>
+                        <li><a href="servico-programacao.html" data-pt="Programação Personalizada" data-en="Custom Programming">Programação Personalizada</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 data-pt="Contato" data-en="Contact">Contato</h4>
+                    <p><i class="fas fa-envelope"></i> contato@neurify.com.br</p>
+                    <p><i class="fas fa-phone"></i> (19) 99595-1060</p>
+                    <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p data-pt="© 2025 NEURIFY. Todos os direitos reservados." data-en="© 2025 NEURIFY. All rights reserved.">© 2025 NEURIFY. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function toggleFaq(element) {
+            const p = element.querySelector('p');
+            const icon = element.querySelector('i');
+            
+            if (p.style.display === 'none' || p.style.display === '') {
+                p.style.display = 'block';
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                p.style.display = 'none';
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+    </script>
+</body>
+</html>
+

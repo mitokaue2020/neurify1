@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gestão de RH - NEURIFY. Soluções completas para gestão de talentos e desenvolvimento de equipes de alta performance.">
+    <link rel="icon" type="image/png" href="assets/ICONEPRETO.png">
+    <title>Gestão de RH - NEURIFY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/ICONEPRETO.png" alt="NEURIFY" class="logo-img dark-mode-logo"></a>
+                </div>
+                
+                <nav class="nav desktop-nav" role="navigation">
+                    <a href="index.html">Início</a>
+                    <a href="index.html#sobre">Sobre</a>
+                    <a href="index.html#servicos">Serviços</a>
+                    <a href="portfolio.html">Portfólio</a>
+                    <a href="contato-avancado.html">Contato</a>
+                    <a href="index.html#contato">Contato</a>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="lang-btn" onclick="toggleLanguage()" aria-label="Alternar idioma">
+                        <i class="fas fa-globe"></i>
+                        <span id="lang-text">PT</span>
+                    </button>
+                    <a class="cta-btn" href="https://wa.me/5519995951060" target="_blank" rel="noopener noreferrer">Solicitar Orçamento</a>
+                    <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Abrir menu mobile">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <nav class="mobile-menu" id="mobileMenu">
+                <a href="index.html" onclick="closeMobileMenu()">Início</a>
+                <a href="index.html#sobre" onclick="closeMobileMenu()">Sobre</a>
+                <a href="index.html#servicos" onclick="closeMobileMenu()">Serviços</a>
+                <a href="index.html#contato" onclick="closeMobileMenu()">Contato</a>
+                <a class="cta-btn mobile" href="https://wa.me/5519995951060" target="_blank" rel="noopener noreferrer">Solicitar Orçamento</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Service Hero -->
+    <section class="service-hero">
+        <div class="container">
+            <div class="service-hero-content">
+                <div class="breadcrumb">
+                    <a href="index.html">Início</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <a href="index.html#servicos">Serviços</a>
+                    <a href="portfolio.html">Portfólio</a>
+                    <a href="contato-avancado.html">Contato</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Gestão de RH</span>
+                </div>
+                
+                <h1>Gestão de Recursos Humanos</h1>
+                <p class="lead">Otimizamos a gestão de talentos da sua empresa com soluções de RH que abrangem desde o recrutamento estratégico até o desenvolvimento contínuo de equipes de alta performance.</p>
+                
+                <div class="service-hero-features">
+                    <div class="feature-badge">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Recrutamento Estratégico</span>
+                    </div>
+                    <div class="feature-badge">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Gestão de Talentos</span>
+                    </div>
+                    <div class="feature-badge">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Desenvolvimento de Equipes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Details -->
+    <section class="service-details">
+        <div class="container">
+            <div class="details-grid">
+                <div class="details-main">
+                    <h2>Soluções Completas de RH</h2>
+                    <p>Nossa abordagem de Gestão de RH vai além do tradicional. Desenvolvemos estratégias personalizadas para atrair, desenvolver e reter os melhores talentos, criando uma cultura organizacional forte e equipes de alta performance que impulsionam o sucesso do seu negócio.</p>
+                    
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-user-plus"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Recrutamento e Seleção</h3>
+                                <p>Processos seletivos estruturados e eficientes para identificar os candidatos mais alinhados com a cultura e necessidades da sua empresa, reduzindo turnover e aumentando a qualidade das contratações.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Gestão de Talentos</h3>
+                                <p>Estratégias de desenvolvimento e retenção de talentos, incluindo planos de carreira, programas de mentoria e iniciativas de engajamento que mantêm sua equipe motivada e produtiva.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Treinamentos e Capacitação</h3>
+                                <p>Programas de treinamento personalizados para desenvolver competências técnicas e comportamentais, preparando sua equipe para os desafios atuais e futuros do mercado.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-clipboard-check"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Avaliação de Performance</h3>
+                                <p>Sistemas de avaliação de desempenho estruturados que fornecem feedback construtivo, identificam áreas de melhoria e reconhecem conquistas, promovendo crescimento contínuo.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-section">
+                        <h2>Nossa Metodologia</h2>
+                        <div class="process-steps">
+                            <div class="process-step">
+                                <div class="step-number">01</div>
+                                <h3>Diagnóstico</h3>
+                                <p>Analisamos a estrutura atual de RH e identificamos oportunidades de melhoria.</p>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">02</div>
+                                <h3>Planejamento</h3>
+                                <p>Desenvolvemos estratégias personalizadas alinhadas aos objetivos do negócio.</p>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">03</div>
+                                <h3>Implementação</h3>
+                                <p>Executamos as soluções com acompanhamento próximo e suporte contínuo.</p>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">04</div>
+                                <h3>Monitoramento</h3>
+                                <p>Avaliamos resultados e ajustamos estratégias para garantir sucesso contínuo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Benefícios</h3>
+                        <ul class="benefits-list">
+                            <li><i class="fas fa-check"></i> Redução de turnover</li>
+                            <li><i class="fas fa-check"></i> Equipes mais engajadas</li>
+                            <li><i class="fas fa-check"></i> Melhoria do clima organizacional</li>
+                            <li><i class="fas fa-check"></i> Aumento da produtividade</li>
+                            <li><i class="fas fa-check"></i> Atração de talentos qualificados</li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Áreas de Atuação</h3>
+                        <div class="tech-tags">
+                            <span>Recrutamento</span>
+                            <span>Onboarding</span>
+                            <span>Treinamento</span>
+                            <span>Avaliação</span>
+                            <span>Cultura</span>
+                            <span>Benefícios</span>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card cta-card">
+                        <h3>Pronto para começar?</h3>
+                        <p>Solicite uma consultoria gratuita e descubra como podemos transformar a gestão de pessoas da sua empresa.</p>
+                        <a href="#contato" class="btn-primary">Solicitar Consultoria</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contato" class="contact-section">
+    <div class="container">
+        <div class="contact-whatsapp-card">
+            <h2>Fale agora com nossa equipe</h2>
+            <p>Atendimento rápido e direto pelo WhatsApp. Sem burocracia, sem fila. Clique no botão abaixo e conte pra gente o que você precisa.</p>
+            <a href="https://wa.me/5519995951060" class="whatsapp-cta" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-cta-icon">
+                <span>Conversar no WhatsApp</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/ICONEPRETO.png" alt="NEURIFY">
+                    </div>
+                    <p>Transformando negócios através de soluções digitais integradas.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="servico-web-design.html">Web Design</a></li>
+                        <li><a href="servico-desenvolvimento.html">Desenvolvimento Web</a></li>
+                        <li><a href="servico-rh.html">Gestão de RH</a></li>
+                        <li><a href="servico-financeiro.html">Gestão Financeira</a></li>
+                        <li><a href="servico-administracao.html">Administração</a></li>
+                        <li><a href="servico-programacao.html">Programação Personalizada</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-envelope"></i> contato@neurify.com.br</p>
+                    <p><i class="fas fa-phone"></i> (19) 99595-1060</p>
+                    <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 NEURIFY. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sobre a NEURIFY - Missão, Visão, Valores e Equipe.">
+    <link rel="icon" type="image/png" href="assets/ICONEPRETO.png">
+    <title>Sobre Nós - NEURIFY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/ICONEPRETO.png" alt="NEURIFY" class="logo-img dark-mode-logo"></a>
+                </div>
+                
+                <nav class="nav desktop-nav" role="navigation">
+                    <a href="index.html">Início</a>
+                    <a href="sobre.html" class="active">Sobre</a>
+                    <a href="index.html#servicos">Serviços</a>
+                    <a href="portfolio.html">Portfólio</a>
+                    <a href="contato-avancado.html">Contato</a>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="lang-btn" onclick="toggleLanguage()" aria-label="Alternar idioma">
+                        <i class="fas fa-globe"></i>
+                        <span id="lang-text">PT</span>
+                    </button>
+                    <a class="cta-btn" href="https://wa.me/5519995951060" target="_blank" rel="noopener noreferrer">Solicitar Orçamento</a>
+                    <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Abrir menu mobile">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <nav class="mobile-menu" id="mobileMenu">
+                <a href="index.html" onclick="closeMobileMenu()">Início</a>
+                <a href="sobre.html" onclick="closeMobileMenu()">Sobre</a>
+                <a href="index.html#servicos" onclick="closeMobileMenu()">Serviços</a>
+                <a href="portfolio.html" onclick="closeMobileMenu()">Portfólio</a>
+                <a href="contato-avancado.html" onclick="closeMobileMenu()">Contato</a>
+                <a class="cta-btn mobile" href="https://wa.me/5519995951060" target="_blank" rel="noopener noreferrer">Solicitar Orçamento</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Service Hero adaptado para Sobre Nós -->
+    <section class="service-hero">
+        <div class="container">
+            <div class="service-hero-content">
+                <div class="breadcrumb">
+                    <a href="index.html">Início</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Sobre Nós</span>
+                </div>
+                
+                <h1>Sobre a NEURIFY</h1>
+                <p class="lead">Transformamos a maneira como as empresas interagem com a tecnologia, oferecendo soluções digitais integradas que impulsionam o crescimento e a eficiência.</p>
+                
+                <div class="service-hero-features">
+                    <div class="feature-badge">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Missão Clara</span>
+                    </div>
+                    <div class="feature-badge">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Valores Sólidos</span>
+                    </div>
+                    <div class="feature-badge">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Equipe Especializada</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conteúdo Principal - Missão, Visão e Valores -->
+    <section class="service-details">
+        <div class="container">
+            <div class="details-grid">
+                <div class="details-main">
+                    
+                    <!-- Missão, Visão e Valores -->
+                    <div class="mvv-section">
+                        <h2>Nossos Pilares</h2>
+                        <p>Nossa atuação é guiada por princípios que garantem a excelência e o foco no sucesso do cliente.</p>
+
+                        <div class="features-list">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-bullseye"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3>Missão</h3>
+                                    <p>Oferecer soluções digitais inovadoras e personalizadas que otimizem processos e gerem valor real para os negócios de nossos clientes.</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3>Visão</h3>
+                                    <p>Ser reconhecida como a principal parceira de transformação digital, impulsionando o futuro dos negócios através da tecnologia.</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3>Valores</h3>
+                                    <p>Inovação, Transparência, Excelência, Colaboração e Foco no Cliente.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nossa História -->
+                    <div class="history-section" style="margin-top: 4rem;">
+                        <h2>Nossa História</h2>
+                        <p>A NEURIFY nasceu em 2015 com o objetivo de simplificar a complexidade da tecnologia para pequenas e médias empresas. Começamos com foco em desenvolvimento web e, rapidamente, expandimos nossos serviços para incluir consultoria em gestão e RH, percebendo a necessidade de uma abordagem mais holística para o crescimento dos nossos clientes.</p>
+                        <p>Ao longo dos anos, evoluímos nossa metodologia, adotando práticas ágeis e investindo continuamente na capacitação da nossa equipe. Hoje, somos uma parceira estratégica, pronta para enfrentar os desafios da transformação digital e construir o futuro do seu negócio.</p>
+                    </div>
+
+                    <!-- Seção da Equipe (Será preenchida na próxima fase) -->
+                    <div class="team-section" style="margin-top: 4rem;">
+                        <h2>Conheça a Equipe</h2>
+                        <p>Nossa equipe é formada por especialistas apaixonados por tecnologia e inovação, prontos para colocar o seu projeto em prática.</p>
+                        <div class="team-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                            <!-- Membro 1 - Carlos Renan -->
+                            <div class="team-member" style="text-align: center; padding: 1.5rem; border-radius: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); background-color: #fff;">
+                                <img src="assets/carlos_renan.jpg" alt="Foto de Carlos Renan" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 1rem; border: 3px solid var(--primary);">
+                                <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Carlos Renan</h3>
+                                <p style="color: var(--primary); font-weight: 600; margin-bottom: 1rem;">Marketing & Design</p>
+                                <p style="font-size: 0.9rem; color: #6c757d;">Responsável por toda a estratégia de comunicação visual e marketing digital, garantindo a identidade e o alcance da marca no mercado.</p>
+                            </div>
+                            <!-- Membro 2 - Joao Bosso -->
+                            <div class="team-member" style="text-align: center; padding: 1.5rem; border-radius: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); background-color: #fff;">
+                                <img src="assets/joao_bosso.jpg" alt="Foto de Joao Bosso" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 1rem; border: 3px solid var(--primary);">
+                                <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Joao Bosso</h3>
+                                <p style="color: var(--primary); font-weight: 600; margin-bottom: 1rem;">RH & Administração</p>
+                                <p style="font-size: 0.9rem; color: #6c757d;">Focado na gestão de recursos humanos e na administração interna, assegurando um ambiente de trabalho produtivo e o cumprimento das normas operacionais.</p>
+                            </div>
+                            <!-- Membro 3 - Kaue Pereira -->
+                            <div class="team-member" style="text-align: center; padding: 1.5rem; border-radius: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); background-color: #fff;">
+                                <img src="assets/kaue_pereira.jpg" alt="Foto de Kaue Pereira" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 1rem; border: 3px solid var(--primary);">
+                                <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Kaue Pereira</h3>
+                                <p style="color: var(--primary); font-weight: 600; margin-bottom: 1rem;">Desenvolvimento & T.I</p>
+                                <p style="font-size: 0.9rem; color: #6c757d;">Especialista em desenvolvimento de software e infraestrutura de T.I., garantindo a criação de soluções robustas e a segurança dos sistemas.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="details-sidebar">
+                    <div class="sidebar-card cta-card">
+                        <h3>Pronto para inovar?</h3>
+                        <p>Fale com nossos especialistas e descubra como podemos transformar seu negócio.</p>
+                        <a class="btn-primary" href="https://wa.me/5519995951060" target="_blank" rel="noopener noreferrer">Falar com Consultor</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contato" class="contact-section">
+    <div class="container">
+        <div class="contact-whatsapp-card">
+            <h2>Fale agora com nossa equipe</h2>
+            <p>Atendimento rápido e direto pelo WhatsApp. Sem burocracia, sem fila. Clique no botão abaixo e conte pra gente o que você precisa.</p>
+            <a href="https://wa.me/5519995951060" class="whatsapp-cta" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-cta-icon">
+                <span>Conversar no WhatsApp</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/ICONEPRETO.png" alt="NEURIFY">
+                    </div>
+                    <p>Transformando negócios através de soluções digitais integradas.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="servico-web-design.html">Web Design</a></li>
+                        <li><a href="servico-desenvolvimento.html">Desenvolvimento Web</a></li>
+                        <li><a href="servico-rh.html">Gestão de RH</a></li>
+                        <li><a href="servico-financeiro.html">Gestão Financeira</a></li>
+                        <li><a href="servico-administracao.html">Administração</a></li>
+                        <li><a href="servico-programacao.html">Programação Personalizada</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-envelope"></i> contato@neurify.com.br</p>
+                    <p><i class="fas fa-phone"></i> (19) 99595-1060</p>
+                    <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 NEURIFY. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

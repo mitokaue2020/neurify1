@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gestão Financeira - NEURIFY. Controle financeiro estratégico para otimizar recursos e maximizar resultados.">
+    <link rel="icon" type="image/png" href="assets/ICONEPRETO.png">
+    <title>Gestão Financeira - NEURIFY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/ICONEPRETO.png" alt="NEURIFY" class="logo-img dark-mode-logo"></a>
+                </div>
+                
+                <nav class="nav desktop-nav" role="navigation">
+                    <a href="index.html">Início</a>
+                    <a href="index.html#sobre">Sobre</a>
+                    <a href="index.html#servicos">Serviços</a>
+                    <a href="portfolio.html">Portfólio</a>
+                    <a href="contato-avancado.html">Contato</a>
+                    <a href="index.html#contato">Contato</a>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="lang-btn" onclick="toggleLanguage()" aria-label="Alternar idioma">
+                        <i class="fas fa-globe"></i>
+                        <span id="lang-text">PT</span>
+                    </button>
+                    <a class="cta-btn" href="https://wa.me/5519995951060" target="_blank" rel="noopener noreferrer">Solicitar Orçamento</a>
+                    <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Abrir menu mobile">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <nav class="mobile-menu" id="mobileMenu">
+                <a href="index.html" onclick="closeMobileMenu()">Início</a>
+                <a href="index.html#sobre" onclick="closeMobileMenu()">Sobre</a>
+                <a href="index.html#servicos" onclick="closeMobileMenu()">Serviços</a>
+                <a href="index.html#contato" onclick="closeMobileMenu()">Contato</a>
+                <a class="cta-btn mobile" href="https://wa.me/5519995951060" target="_blank" rel="noopener noreferrer">Solicitar Orçamento</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Service Hero -->
+    <section class="service-hero">
+        <div class="container">
+            <div class="service-hero-content">
+                <div class="breadcrumb">
+                    <a href="index.html">Início</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <a href="index.html#servicos">Serviços</a>
+                    <a href="portfolio.html">Portfólio</a>
+                    <a href="contato-avancado.html">Contato</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Gestão Financeira</span>
+                </div>
+                
+                <h1>Gestão Financeira Estratégica</h1>
+                <p class="lead">Oferecemos controle financeiro estratégico para otimizar recursos, reduzir custos e maximizar a lucratividade do seu negócio, com análises precisas e relatórios gerenciais claros.</p>
+                
+                <div class="service-hero-features">
+                    <div class="feature-badge">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Planejamento Financeiro</span>
+                    </div>
+                    <div class="feature-badge">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Controle de Custos</span>
+                    </div>
+                    <div class="feature-badge">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Análise de ROI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Details -->
+    <section class="service-details">
+        <div class="container">
+            <div class="details-grid">
+                <div class="details-main">
+                    <h2>Controle Financeiro Inteligente</h2>
+                    <p>Nossa gestão financeira vai além dos números. Desenvolvemos estratégias financeiras personalizadas que proporcionam visibilidade completa sobre a saúde financeira do seu negócio, permitindo decisões mais assertivas e um crescimento sustentável e lucrativo.</p>
+                    
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-pie"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Planejamento Financeiro</h3>
+                                <p>Desenvolvemos planos financeiros estratégicos que alinham recursos com objetivos de negócio, incluindo projeções de fluxo de caixa, orçamentos e cenários de crescimento.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-cut"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Controle de Custos</h3>
+                                <p>Implementamos sistemas de controle de custos que identificam desperdícios, otimizam processos e reduzem gastos desnecessários sem comprometer a qualidade.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-file-invoice-dollar"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Relatórios Gerenciais</h3>
+                                <p>Criamos relatórios financeiros claros e objetivos que fornecem insights valiosos sobre o desempenho do negócio, facilitando a tomada de decisões estratégicas.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-percentage"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Análise de ROI</h3>
+                                <p>Avaliamos o retorno sobre investimento de projetos e iniciativas, garantindo que cada real investido gere o máximo de valor para o seu negócio.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-section">
+                        <h2>Nossa Metodologia</h2>
+                        <div class="process-steps">
+                            <div class="process-step">
+                                <div class="step-number">01</div>
+                                <h3>Diagnóstico</h3>
+                                <p>Analisamos a situação financeira atual e identificamos oportunidades de melhoria.</p>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">02</div>
+                                <h3>Estratégia</h3>
+                                <p>Desenvolvemos um plano financeiro personalizado alinhado aos seus objetivos.</p>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">03</div>
+                                <h3>Implementação</h3>
+                                <p>Executamos as estratégias com acompanhamento próximo e ajustes quando necessário.</p>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">04</div>
+                                <h3>Monitoramento</h3>
+                                <p>Acompanhamos resultados e fornecemos relatórios periódicos de desempenho.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Benefícios</h3>
+                        <ul class="benefits-list">
+                            <li><i class="fas fa-check"></i> Redução de custos</li>
+                            <li><i class="fas fa-check"></i> Melhor fluxo de caixa</li>
+                            <li><i class="fas fa-check"></i> Decisões mais assertivas</li>
+                            <li><i class="fas fa-check"></i> Aumento da lucratividade</li>
+                            <li><i class="fas fa-check"></i> Crescimento sustentável</li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Áreas de Atuação</h3>
+                        <div class="tech-tags">
+                            <span>Fluxo de Caixa</span>
+                            <span>Orçamento</span>
+                            <span>Custos</span>
+                            <span>Investimentos</span>
+                            <span>Relatórios</span>
+                            <span>Análises</span>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card cta-card">
+                        <h3>Pronto para começar?</h3>
+                        <p>Solicite uma consultoria gratuita e descubra como podemos otimizar a gestão financeira da sua empresa.</p>
+                        <a href="#contato" class="btn-primary">Solicitar Consultoria</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contato" class="contact-section">
+    <div class="container">
+        <div class="contact-whatsapp-card">
+            <h2>Fale agora com nossa equipe</h2>
+            <p>Atendimento rápido e direto pelo WhatsApp. Sem burocracia, sem fila. Clique no botão abaixo e conte pra gente o que você precisa.</p>
+            <a href="https://wa.me/5519995951060" class="whatsapp-cta" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-cta-icon">
+                <span>Conversar no WhatsApp</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/ICONEPRETO.png" alt="NEURIFY">
+                    </div>
+                    <p>Transformando negócios através de soluções digitais integradas.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="servico-web-design.html">Web Design</a></li>
+                        <li><a href="servico-desenvolvimento.html">Desenvolvimento Web</a></li>
+                        <li><a href="servico-rh.html">Gestão de RH</a></li>
+                        <li><a href="servico-financeiro.html">Gestão Financeira</a></li>
+                        <li><a href="servico-administracao.html">Administração</a></li>
+                        <li><a href="servico-programacao.html">Programação Personalizada</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-envelope"></i> contato@neurify.com.br</p>
+                    <p><i class="fas fa-phone"></i> (19) 99595-1060</p>
+                    <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 NEURIFY. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

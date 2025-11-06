@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web Design Criativo - NEURIFY. Designs modernos, responsivos e intuitivos que capturam a essência da sua marca.">
+    <link rel="icon" type="image/png" href="assets/ICONEPRETO.png">
+    <title>Web Design Criativo - NEURIFY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/ICONEPRETO.png" alt="NEURIFY" class="logo-img dark-mode-logo"></a>
+                </div>
+                
+                <nav class="nav desktop-nav" role="navigation">
+                    <a href="index.html">Início</a>
+                    <a href="index.html#sobre">Sobre</a>
+                    <a href="index.html#servicos">Serviços</a>
+                    <a href="portfolio.html">Portfólio</a>
+                    <a href="contato-avancado.html">Contato</a>
+                    <a href="index.html#contato">Contato</a>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="lang-btn" onclick="toggleLanguage()" aria-label="Alternar idioma">
+                        <i class="fas fa-globe"></i>
+                        <span id="lang-text">PT</span>
+                    </button>
+                    <a class="cta-btn" href="https://wa.me/5519995951060" target="_blank" rel="noopener noreferrer">Solicitar Orçamento</a>
+                    <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Abrir menu mobile">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <nav class="mobile-menu" id="mobileMenu">
+                <a href="index.html" onclick="closeMobileMenu()">Início</a>
+                <a href="index.html#sobre" onclick="closeMobileMenu()">Sobre</a>
+                <a href="index.html#servicos" onclick="closeMobileMenu()">Serviços</a>
+                <a href="index.html#contato" onclick="closeMobileMenu()">Contato</a>
+                <a class="cta-btn mobile" href="https://wa.me/5519995951060" target="_blank" rel="noopener noreferrer">Solicitar Orçamento</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Service Hero -->
+    <section class="service-hero">
+        <div class="container">
+            <div class="service-hero-content">
+                <div class="breadcrumb">
+                    <a href="index.html">Início</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <a href="index.html#servicos">Serviços</a>
+                    <a href="portfolio.html">Portfólio</a>
+                    <a href="contato-avancado.html">Contato</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Web Design</span>
+                </div>
+                
+                <h1>Web Design Criativo</h1>
+                <p class="lead">Criamos experiências digitais memoráveis com designs modernos, responsivos e intuitivos, que não apenas captivam seu público, mas também refletem a identidade e os valores da sua marca.</p>
+                
+                <div class="service-hero-features">
+                    <div class="feature-badge">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Design Responsivo</span>
+                    </div>
+                    <div class="feature-badge">
+                        <i class="fas fa-check-circle"></i>
+                        <span>UX/UI Otimizada</span>
+                    </div>
+                    <div class="feature-badge">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Identidade Visual</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Details -->
+    <section class="service-details">
+        <div class="container">
+            <div class="details-grid">
+                <div class="details-main">
+                    <h2>O que oferecemos</h2>
+                    <p>Nosso serviço de Web Design vai muito além da estética. Desenvolvemos interfaces que combinam beleza visual com funcionalidade impecável, garantindo que cada elemento do seu site trabalhe em harmonia para proporcionar a melhor experiência possível aos seus usuários.</p>
+                    
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Design Responsivo</h3>
+                                <p>Seu site funcionará perfeitamente em todos os dispositivos - desktop, tablet e smartphone. Garantimos uma experiência consistente e otimizada, independentemente da tela utilizada.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>UX/UI Otimizada</h3>
+                                <p>Criamos interfaces intuitivas que facilitam a navegação e aumentam o engajamento. Cada botão, cada cor e cada espaço é pensado para guiar o usuário de forma natural.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Identidade Visual</h3>
+                                <p>Desenvolvemos uma identidade visual única que comunica os valores da sua marca de forma clara e memorável, criando conexão emocional com seu público.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-drafting-compass"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Prototipagem</h3>
+                                <p>Antes de iniciar o desenvolvimento, criamos protótipos interativos que permitem visualizar e testar o design, garantindo que tudo esteja perfeito antes da implementação.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-section">
+                        <h2>Nosso Processo</h2>
+                        <div class="process-steps">
+                            <div class="process-step">
+                                <div class="step-number">01</div>
+                                <h3>Descoberta</h3>
+                                <p>Entendemos seu negócio, público-alvo e objetivos para criar uma estratégia de design alinhada.</p>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">02</div>
+                                <h3>Conceituação</h3>
+                                <p>Desenvolvemos conceitos visuais e wireframes que traduzem sua visão em elementos tangíveis.</p>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">03</div>
+                                <h3>Design</h3>
+                                <p>Criamos o design final com atenção aos detalhes, cores, tipografia e elementos visuais.</p>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">04</div>
+                                <h3>Entrega</h3>
+                                <p>Finalizamos com revisões e ajustes, garantindo que o resultado supere suas expectativas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Benefícios</h3>
+                        <ul class="benefits-list">
+                            <li><i class="fas fa-check"></i> Aumento do engajamento</li>
+                            <li><i class="fas fa-check"></i> Melhor experiência do usuário</li>
+                            <li><i class="fas fa-check"></i> Maior conversão de visitantes</li>
+                            <li><i class="fas fa-check"></i> Fortalecimento da marca</li>
+                            <li><i class="fas fa-check"></i> Diferenciação da concorrência</li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Tecnologias</h3>
+                        <div class="tech-tags">
+                            <span>Figma</span>
+                            <span>Adobe XD</span>
+                            <span>Photoshop</span>
+                            <span>Illustrator</span>
+                            <span>Sketch</span>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card cta-card">
+                        <h3>Pronto para começar?</h3>
+                        <p>Solicite um orçamento gratuito e descubra como podemos transformar sua presença digital.</p>
+                        <a class="btn-primary" href="https://wa.me/5519995951060" target="_blank" rel="noopener noreferrer">Solicitar Orçamento</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contato" class="contact-section">
+    <div class="container">
+        <div class="contact-whatsapp-card">
+            <h2>Fale agora com nossa equipe</h2>
+            <p>Atendimento rápido e direto pelo WhatsApp. Sem burocracia, sem fila. Clique no botão abaixo e conte pra gente o que você precisa.</p>
+            <a href="https://wa.me/5519995951060" class="whatsapp-cta" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-cta-icon">
+                <span>Conversar no WhatsApp</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/ICONEPRETO.png" alt="NEURIFY">
+                    </div>
+                    <p>Transformando negócios através de soluções digitais integradas.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="servico-web-design.html">Web Design</a></li>
+                        <li><a href="servico-desenvolvimento.html">Desenvolvimento Web</a></li>
+                        <li><a href="servico-rh.html">Gestão de RH</a></li>
+                        <li><a href="servico-financeiro.html">Gestão Financeira</a></li>
+                        <li><a href="servico-administracao.html">Administração</a></li>
+                        <li><a href="servico-programacao.html">Programação Personalizada</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-envelope"></i> contato@neurify.com.br</p>
+                    <p><i class="fas fa-phone"></i> (19) 99595-1060</p>
+                    <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 NEURIFY. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
